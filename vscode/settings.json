@@ -1,0 +1,33 @@
+{
+  "telemetry.enableTelemetry": false,
+  "[restructuredtext]": {
+      "editor.insertSpaces": true,
+      "editor.tabSize": 2,
+      "editor.autoIndent": true
+  },
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.suggestSelection": "first",
+  "editor.rulers": [
+      100
+  ],
+  "editor.tabSize": 2,
+  "editor.fontSize": 13,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.tokenColorCustomizations": {
+      "textMateRules": [
+          {
+              "scope": [
+                  "comment",
+              ],
+              "settings": {
+                  "fontStyle": "italic"
+              }
+          },
+      ]
+  },
+  "workbench.colorTheme": "Gruvbox Dark (Medium)",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "extensions.ignoreRecommendations": true,
+}
