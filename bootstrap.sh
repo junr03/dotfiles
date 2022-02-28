@@ -1,25 +1,22 @@
 # install brew
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# source .zshrc
-source ~/.zshrc
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # install applications
-brew install iterm2
-brew install visual-studio-code
-brew install alfred
+/opt/homebrew/bin/brew install iterm2
+/opt/homebrew/bin/brew install visual-studio-code
+/opt/homebrew/bin/brew install alfred
 
 # install font Fira-Code
-brew tap homebrew/cask-fonts
-brew install --cask font-fira-code
+/opt/homebrew/bin/brew tap homebrew/cask-fonts
+/opt/homebrew/bin/brew install --cask font-fira-code
 
 # ssh key for github
 ssh-keygen -t ed25519 -C "jun03@users.noreply.github.com"
 eval "$(ssh-agent -s)"
-ssh-add -K ~/.ssh/github_ssh
+ssh-add -K ~/.ssh/github
 
 # setup macOS settings
 ./macos/settings

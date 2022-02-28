@@ -26,8 +26,8 @@
               }
           },
       ]
-  },
-  "workbench.colorTheme": "Gruvbox Dark (Medium)",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "extensions.ignoreRecommendations": true,
+},
+"diffEditor.ignoreTrimWhitespace": false,
+"extensions.ignoreRecommendations": true,
+"workbench.colorTheme": "Gruvbox Dark (Medium)",
 }
