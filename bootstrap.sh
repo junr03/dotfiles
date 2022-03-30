@@ -29,11 +29,8 @@ ln -s -f ~/dotfiles/ssh/config ~/.ssh/config
 ln -s -f ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -s -f ~/dotfiles/ssh/config ~/.ssh/config
 
-# default directories
-mkdir -p ~/src
-
 # zsh theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # default directories
-mkdir ~/src
+mkdir -p ~/src
