@@ -8,6 +8,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 /opt/homebrew/bin/brew install iterm2
 /opt/homebrew/bin/brew install visual-studio-code
 /opt/homebrew/bin/brew install alfred
+/opt/homebrew/bin/brew install notion
 
 # install font Fira-Code
 /opt/homebrew/bin/brew tap homebrew/cask-fonts
@@ -24,7 +25,11 @@ ssh-add -K ~/.ssh/github
 # symlink dotfiles
 ln -s -f ~/dotfiles/zsh/.zshrc ~/.zshrc
 ln -s -f ~/dotfiles/git/.gitconfig ~/.gitconfig
+ln -s -f ~/dotfiles/ssh/config ~/.ssh/config
 ln -s -f ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 
 # zsh theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+# default directories
+mkdir ~/src
