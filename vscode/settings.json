@@ -7,9 +7,10 @@
   },
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
   "editor.suggestSelection": "first",
   "editor.rulers": [
-      100
+      120
   ],
   "editor.tabSize": 2,
   "editor.fontSize": 13,
@@ -30,4 +31,64 @@
 "diffEditor.ignoreTrimWhitespace": false,
 "extensions.ignoreRecommendations": true,
 "workbench.colorTheme": "Gruvbox Dark (Medium)",
+
+// Gitlens
+"gitlens.currentLine.enabled": false,
+"gitlens.codeLens.enabled": false,
+"gitlens.hovers.enabled": false,
+"gitlens.defaultTimeFormat": "H:MM",
+"gitlens.views.showRelativeDateMarkers": false,
+
+// Patch Config
+"editor.formatOnSave": false, # this is up to you, but I prefer enabling my linters language by language
+"editor.formatOnPaste": false,
+"editor.codeActionsOnSave": {
+
+  "source.organizeImports": false,
+  "source.fixAll.eslint": true
+},
+"editor.defaultFormatter": null,
+"[ruby]": {
+    "editor.formatOnSave": true # you can also enable this setting globally if you prefer
+},
+"ruby.lintDebounceTime": 1500, # avoid running the formatter instantly on every key strokee
+"ruby.useLanguageServer": true,
+"ruby.lint": {
+    "rubocop": {
+        "lint": true
+    },
+},
+"ruby.format": "rubocop",
+"[javascript]": {
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[javascriptreact]": {
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[json]": {
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[typescript]": {
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"javascript.updateImportsOnFileMove.enabled": "always",
+"typescript.updateImportsOnFileMove.enabled": "always",
+"eslint.validate": [
+  "javascript",
+  "typescript"
+],
+"eslint.alwaysShowStatus": true,
+// "solargraph.useBundler": true,
+// "solargraph.bundlerPath": "/Users/junr03/.rbenv/shims/bundle",
+// "solargraph.completion": true,
+// "solargraph.symbols": true,
+// "solargraph.definitions": true,
+// "solargraph.references": true,
+// "solargraph.rename": true
+"sorbet.enabled": true,
+"editor.foldingMaximumRegions": 8000,
 }
