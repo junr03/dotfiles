@@ -32,6 +32,51 @@
 "extensions.ignoreRecommendations": true,
 "workbench.colorTheme": "Gruvbox Dark (Medium)",
 
+// Terminal
+"terminal.integrated.fontFamily": "Fira Code",
+"teriman.integrated.fontSize": 15,
+"workbench.colorCustomizations": {
+  "terminal.background":"#282828",
+  "terminal.foreground":"#ebdbb2",
+  "terminal.ansiBlack":"#1d2021",
+  "terminal.ansiBrightBlack":"#504945",
+  "terminal.ansiBlue": "#458588",
+  "terminal.ansiBrightBlue":"#83a598",
+  "terminal.ansiCyan":"#689d6a",
+  "terminal.ansiBrightCyan":"#8ec07c",
+  "terminal.ansiGreen":"#98971a",
+  "terminal.ansiBrightGreen":"#b8bb26",
+  "terminal.ansiMagenta":"#b16286",
+  "terminal.ansiBrightMagenta":"#d3869b",
+  "terminal.ansiRed":"#cc241d",
+  "terminal.ansiBrightRed":"#fb4934",
+  "terminal.ansiWhite":"#ffffff",
+  "terminal.ansiBrightWhite":"#ffffff",
+  "terminal.ansiYellow":"#d79921",
+  "terminal.ansiBrightYellow":"#fabd2f"
+  },
+  // Light customization
+  // "workbench.colorCustomizations": {
+  //   "terminal.background":"#fbf1c7",
+  //   "terminal.foreground":"#282828",
+  //   "terminal.ansiBlack":"#1d2021",
+  //   "terminal.ansiBrightBlack":"#504945",
+  //   "terminal.ansiBlue": "#076678",
+  //   "terminal.ansiBrightBlue":"#458588",
+  //   "terminal.ansiCyan":"#427b58",
+  //   "terminal.ansiBrightCyan":"#689d6a",
+  //   "terminal.ansiGreen":"#79740e",
+  //   "terminal.ansiBrightGreen":"#98971a",
+  //   "terminal.ansiMagenta":"#8f3f71",
+  //   "terminal.ansiBrightMagenta":"#b16286",
+  //   "terminal.ansiRed":"#9d0006",
+  //   "terminal.ansiBrightRed":"#cc241d",
+  //   "terminal.ansiWhite":"#ffffff",
+  //   "terminal.ansiBrightWhite":"#ffffff",
+  //   "terminal.ansiYellow":"#b57614",
+  //   "terminal.ansiBrightYellow":"#d79921"
+  //   },
+
 // Gitlens
 "gitlens.currentLine.enabled": false,
 "gitlens.codeLens.enabled": false,
@@ -42,6 +87,7 @@
 // Patch Config
 "editor.formatOnSave": false, # this is up to you, but I prefer enabling my linters language by language
 "editor.formatOnPaste": false,
+"editor.formatOnType": false,
 "editor.codeActionsOnSave": {
 
   "source.organizeImports": false,
@@ -50,8 +96,10 @@
 "editor.defaultFormatter": null,
 "[ruby]": {
     "editor.formatOnSave": true # you can also enable this setting globally if you prefer
+    "editor.formatOnType": false,
+    "editor.formatOnPaste": false
 },
-"ruby.lintDebounceTime": 1500, # avoid running the formatter instantly on every key strokee
+"ruby.lintDebounceTime": 5000, # avoid running the formatter instantly on every key strokee
 "ruby.useLanguageServer": true,
 "ruby.lint": {
     "rubocop": {
@@ -82,13 +130,6 @@
   "typescript"
 ],
 "eslint.alwaysShowStatus": true,
-// "solargraph.useBundler": true,
-// "solargraph.bundlerPath": "/Users/junr03/.rbenv/shims/bundle",
-// "solargraph.completion": true,
-// "solargraph.symbols": true,
-// "solargraph.definitions": true,
-// "solargraph.references": true,
-// "solargraph.rename": true
 "sorbet.enabled": true,
-"editor.foldingMaximumRegions": 8000,
+"editor.foldingMaximumRegions": 8000
 }
