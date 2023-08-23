@@ -7,17 +7,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # install applications
 /opt/homebrew/bin/brew install iterm2
 /opt/homebrew/bin/brew install visual-studio-code
-/opt/homebrew/bin/brew install alfred
-/opt/homebrew/bin/brew install notion
 
 # install font Fira-Code
 /opt/homebrew/bin/brew tap homebrew/cask-fonts
 /opt/homebrew/bin/brew install --cask font-fira-code
-
-# ssh key for github
-ssh-keygen -t ed25519 -C "jun03@users.noreply.github.com"
-eval "$(ssh-agent -s)"
-ssh-add -K ~/.ssh/github
 
 # setup macOS settings
 ./macos/settings

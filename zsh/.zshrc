@@ -5,8 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-source ~/secrets/env_secrets.sh
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="/usr/local/bin/rubocop-daemon-wrapper:/opt/homebrew/bin:$HOME/bin:$HOME/.yarn/bin:$PATH"
@@ -30,5 +28,3 @@ alias git_branch_clean="git branch | grep -v "main" | xargs git branch -D"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/dotfiles/zsh/.p10k.zsh ]] || source ~/dotfiles/zsh/.p10k.zsh
-
-source ~/dotfiles/patch/env
