@@ -20,7 +20,6 @@ ln -s -f ~/dotfiles/zsh/.zshrc ~/.zshrc
 ln -s -f ~/dotfiles/git/.gitconfig ~/.gitconfig
 ln -s -f ~/dotfiles/ssh/config ~/.ssh/config
 ln -s -f ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-ln -s -f ~/dotfiles/ssh/config ~/.ssh/config
 
 # zsh theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
