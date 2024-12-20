@@ -9,7 +9,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 /opt/homebrew/bin/brew install visual-studio-code
 /opt/homebrew/bin/brew install raycast
 /opt/homebrew/bin/brew install adobe-creative-cloud
-/opt/homebrew/bin/brew install logi-options-plus
 
 # install font Fira-Code
 /opt/homebrew/bin/brew tap homebrew/cask-fonts
