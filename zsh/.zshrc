@@ -16,6 +16,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+export SOPS_AGE_KEY_FILE="$HOME/.config/sops/age/keys.txt"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
